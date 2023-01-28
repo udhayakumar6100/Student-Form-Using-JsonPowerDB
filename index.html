@@ -1,0 +1,50 @@
+<!DOCTYPE html>  
+<html lang="en">
+    <head>    
+        <title>Student Form</title>   
+        <meta charset="utf-8">   
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <script type="text/javascript" src="js/index.js"></script> 
+    </head> 
+    <body>    
+        <div class="container">   
+            <h2 align="center">Enter The Details</h2>   
+            <form id="stuForm" method="post">   
+                <div class="form-group">    
+                    <label>Roll-No:</label> 
+                    <input type="text" class="form-control" name="roolNo" id="roolNo" placeholder="Enter Roll Number" onchange="getStu()">  
+                      </div>  
+                  <div class="form-group">    
+                    <label>Full-Name:</label>   
+                    <input type="text" class="form-control" id="name" placeholder="Enter Full Name" name="name">  
+                      </div> 
+                  <div class="form-group">   
+                    <label>class :</label>  
+                      <input type="text" class="form-control" id="stuClass" placeholder="Enter Class" name="stuClass">  
+                      </div>   
+                <div class="form-group">   
+                    <label for="dob">Date Of Birth :</label>  
+                      <input type="Date" class="form-control" id="dob" placeholder="Enter Date Of Birth" name="dob">  
+                      </div>   
+                <div class="form-group">   
+                    <label>Address :</label>  
+                      <input type="text" class="form-control" id="address" placeholder="Enter Your Address" name="address">  
+                      </div>   
+                <div class="form-group">   
+                    <label>Enrollment-Date :</label>  
+                      <input type="Date" class="form-control" id="enDate" placeholder="Enter Your Enrollment-Date" name="enDate">  
+                      </div>   
+                <div align="center">
+                    <input type="button" class="btn btn-primary" id="stuSave" value="Save" disabled onclick="saveData()"> 
+                    <input type="button" class="btn btn-primary" id="stuUpdate" value="Update" disabled onclick="updateData()"> 
+                    <input type="button" class="btn btn-primary" id="stuReset" value="Reset" disabled onclick="resetForm()">  
+                </div>
+            </form>  
+        </div>  
+        
+    </body>
+</html>
